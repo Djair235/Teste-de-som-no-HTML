@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio no HTML</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #div__pai {
+            margin-top: 100px;
+        }
+        #h1 {
+            text-align: center;
+        }
+
+        #container__1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #label__1 {
+            font-size: 20px;
+        }
+
+        #button1 {
+            text-align: center;
+            margin-top: 10px;
+            width: 150px;
+            font-size: 20px;
+            border: 2px #303030 solid;
+            border-radius: 20px;
+            cursor: pointer;
+            background-color: #a096e1;
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        #img__robot {
+            height: 65px;
+            width: 65px;
+            margin-top: 15px;
+            margin-left: 7px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="div__pai">
+        <h1 id="h1">Colocando Áudio no HTML</h1>
+        <div id="container__1">
+            <audio id="audio1" src="/imagens/Efeito Sonoro - SOM TECNOLOGIA,  ROBÓTICA!.mp3"></audio>
+            <label for="" id="label__1">ativar</label>
+            <button id="button1">Efeito Sonoro</button>
+            <div id="div__img1">
+                <img id="img__robot" src="/imagens/assistente-de-ia.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        const Button_Audio = document.getElementById("button1")
+        const Audio = document.getElementById("audio1");
+
+        Button_Audio.addEventListener("click", ()=> {
+            Audio.play();
+        })
+
+    </script>
+
+</body>
+</html>
